@@ -1,27 +1,40 @@
-# YbTestFinal
+# Yabonza
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+This is my implementation of the gumtree test.
 
-## Development server
+It includes:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Lists richest people.
+* Search functionality (name, net worth, currency and country of birth).
+* Currency conversion/
+* Filter by country of birth.
+* Order by rank, age and name.
+* Responsive design.
+  
+## TODO
+* Dockerise application.
+* More unit tests.
+* e2e tests.
 
-## Code scaffolding
+## How to build
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the following commands on the CLI from the project directory.
 
-## Build
+To build just run from the root directory:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+    npm install
 
-## Running unit tests
+To start that application just use:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    npm start
+    
+To run unit tests just use:
 
-## Running end-to-end tests
+    npm test
+    
+To run the application, point your browser to:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    http://localhost:4200
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[Application](http:/localhost:4200)
+    

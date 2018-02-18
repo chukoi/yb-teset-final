@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ * styles.css
+ * Global styles.
+ *
+ * @dateCreated 18/02/2018
+ * @author Dean Heffernan
+ */
+
+html,
+body {
+  /* Set text look. */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.30769231;
+}

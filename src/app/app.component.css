@@ -1,0 +1,133 @@
+/*
+ * app.component.css
+ *
+ * @dateCreated 18/02/2018
+ * @author Dean Heffernan
+ **/
+
+/* TODO: Use SASS. */
+/* Set fixed with and center content. Need to revise this a little to make it look exact. */
+main {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Increase font size of headers. */
+h1,
+h2 {
+  font-size: 3em;
+}
+
+/* Set background colour of containers and add borders to them. */
+.container,
+.celebrities-container,
+.celebrity {
+  background-color: #F2F2F2;
+  border: 1px solid #D8D8D8;
+}
+
+/* Align filter row and make sure it fits its container. */
+.field-row {
+  display: inline-flex;
+  width: 100%;
+}
+
+.field {
+  /* Make sure the fields don't look so cramped. */
+  padding: 10px 0;
+  /* Fields should take half width of row. */
+  width: 50%;
+  /* Fix size of search field on small devices. The search field pushes the order by field down. */
+  max-height: 50px;
+}
+
+/* Add spacing between the right fields. */
+.field.field-left {
+  margin-right: 10px;
+}
+
+/* Add spacing around the right fields. */
+.field.field-right {
+  margin-left: 10px;
+}
+
+/* Make field labels bold. */
+label.field-label {
+  font-weight: bold;
+}
+
+/* Add styling around the fields. */
+.field select,
+.field input {
+  display: block;
+  width: 100%;
+  /* Don't make the fields look so cramped. */
+  padding: 5px;
+  /* Fix search box overflowing. */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  /* Make container look similar to spec. TODO: Probably need to revise this a little to make it look exact. */
+  padding: 10px 150px;
+  /* Add spacing between the main container and the header section. */
+  margin-top: 20px;
+}
+
+/* Add spacing arround celebrity cards. */
+.celebrities-container {
+  padding: 30px;
+}
+
+/* Add the style for the celebrity card header. */
+.celebrity-header {
+  background-color: #074E68;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+/* Add a little space bettween each detail for each celebrity. */
+.celebrity-detail {
+  margin: 15px 0;
+}
+
+@media (max-width: 830px) {
+  /* On smaller screens make the content fit full width. */
+  main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Make spacing smaller so the cards don't look so cramped. */
+  .container {
+    padding: 10px 130px;
+  }
+}
+
+@media (max-width: 667px) {
+  /* Make spacing smaller so the cards don't look so cramped. */
+  .container {
+    padding: 10px 50px;
+  }
+
+  /* Make fields on top of each other on small screens. */
+  .field-row {
+    display: block;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  /* Remove the spacing between fields as they are now on top of each other. */
+  .field.field-left,
+  .field.field-right {
+    margin: 0;
+  }
+
+}
+
